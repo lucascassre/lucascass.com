@@ -97,11 +97,28 @@
     }
 
     .brand {
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      line-height: 1.1;
-    }
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  line-height: 1.1;
+}
+
+.brokerage-logo {
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.agent-branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #d9dee3;
+  padding-left: 18px;
+}
 
     .brand-main {
       font-size: 1.45rem;
@@ -645,6 +662,17 @@
 
       .brand-main {
         font-size: 1.2rem;
+        .brand {
+  gap: 10px;
+}
+
+.brokerage-logo {
+  width: 150px;
+}
+
+.agent-branding {
+  padding-left: 10px;
+}
       }
 
       .brand-sub {
@@ -676,12 +704,14 @@
     <div class="container nav">
 
       <a class="brand" href="#home">
-        <span class="brand-main">Lucas Cass, REALTOR®</span>
-        <span class="brand-sub">
-          Your Home Sold Guaranteed Realty – Kings of Real Estate
-        </span>
-      </a>
-
+  <img src="yhsg-logo.jpeg"
+       alt="Your Home Sold Guaranteed Realty – Kings of Real Estate"
+       class="brokerage-logo">
+  <div class="agent-branding">
+    <span class="brand-main">Lucas Cass, REALTOR®</span>
+    <span class="brand-sub">Your Home Sold Guaranteed Realty – Kings of Real Estate</span>
+  </div>
+</a>
       <nav aria-label="Primary navigation">
         <ul>
           <li><a href="#home">Home</a></li>
