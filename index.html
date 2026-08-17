@@ -404,7 +404,26 @@
       gap: 60px;
       align-items: center;
     }
+.portrait-photo {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--navy);
+}
 
+.portrait-photo img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .portrait-photo img {
+    height: 430px;
+  }
+}
     .portrait-placeholder {
       min-height: 500px;
       border-radius: 10px;
@@ -849,12 +868,12 @@
     <section id="about">
       <div class="container about-wrap">
 
-        <div class="portrait-placeholder">
-          <div>
-            <strong>Lucas Cass</strong><br>
-            REALTOR® | East Tennessee
-          </div>
-        </div>
+        <div class="portrait-photo">
+  <img
+    src="1000004735.jpg"
+    alt="Lucas Cass, REALTOR® with Your Home Sold Guaranteed Realty – Kings of Real Estate"
+  >
+</div>
 
         <div class="about-copy">
           <div class="label">Meet Lucas</div>
